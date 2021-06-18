@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // ATM取款机
+        var str = '请输入您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出';
+        var money = 100,op;
+        do {
+            op = prompt(str);
+            switch (op) {
+                case '1':
+                    var takem = prompt('请输入存的钱数：');
+                    money += parseFloat(takem);
+                    break;
+                case '2':
+                    var putm = prompt('请输入取钱数：');
+                    money -= parseFloat(putm);
+                    break;
+                case '3':
+                    alert('你现在有' + money + '元');
+                    break;
+                case '4':
+                    break;
+            }
+        } while (parseInt(op) != 4);
+        alert('感谢您的使用！');
+    </script>
+    <script src="1-1.js"></script>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>
